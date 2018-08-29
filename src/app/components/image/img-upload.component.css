@@ -1,0 +1,72 @@
+#dropzone {
+  position: relative;
+  border: 5px solid #3D4252;
+  border-radius: 20px;
+  color: #3D4252;
+  font: bold 24px/200px arial;
+  height: 200px;
+  background: #CACBD5;
+  margin: 40px auto 0 auto;
+  text-align: center;
+  width: 90%;
+}
+
+#dropzone:hover {
+  border: 10px solid #D55E2D;
+  font-size: 150%;
+  color: #D55E2D;
+}
+
+#dropzone div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#dropzone img {
+  border-radius: 10px;
+  vertical-align: middle;
+  max-width: 95%;
+  max-height: 95%;
+}
+
+#dropzone [type="file"] {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.imageBox{
+  position: relative;
+  margin: 1% 0 0 4.9%;
+  height: auto;
+  width: 90%;
+  border: 5px solid #CACBD5;
+  border-radius: 10px;
+  padding-left: 0%;   
+}
+
+.imgDiv:hover{
+  /* margin: 0; */
+  border: 0.6px solid #D55E2D;
+}
+
+img{
+  margin-top: 10px;
+  width: 250px;
+  height: 250px;
+}
+
+.imgDiv{
+  /* margin: 0; */
+  padding: 0;
+  border: 0.6px solid #CACBD5;
+  overflow: hidden;
+}

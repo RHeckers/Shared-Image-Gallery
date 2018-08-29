@@ -1,0 +1,52 @@
+
+nav{
+    position: relative;
+    padding-top: 30px;
+    top: 0;
+    left: 0;
+    margin: -1.5% 0 0 0;
+    width: 100%;
+    height: 75px;
+    background: #3D4252;
+    color: #CACBD5;
+} 
+
+.favoriteLink{
+    color: #CACBD5;
+    cursor: pointer;
+    margin: -45px 2% 0 0;
+}
+
+.login{
+    cursor: pointer;
+    margin: -45px 6% 0 0;
+    color: #CACBD5;
+}
+
+.logout{
+    cursor: pointer;
+    margin: -45px 8% 0 0;
+    color: #CACBD5;
+
+}
+
+.login:hover{
+    font-weight: bold;
+}
+
+.logout:hover{
+    font-weight: bold;
+}
+.favoriteLink:hover{
+    font-weight: bold;
+} 
+
+.homeLink{
+    margin: -45px 0% 0 2%;
+    color: #CACBD5;
+
+}
+.homeLink:hover{
+    font-weight: bold;
+
+}

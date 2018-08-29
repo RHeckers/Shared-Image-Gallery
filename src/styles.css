@@ -1,0 +1,165 @@
+/* You can add global styles to this file, and also import other style files */
+html{
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+body{
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    top: 0;
+
+}
+
+img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.container{
+    margin: 1% auto;
+    max-width: 90%;
+    height: auto ;
+
+}
+
+.btn2{
+    border: none;
+    width: 15%;
+    min-width: 100px;
+    height: 3em;
+    background: #D55E2D;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 0.5% 2% 0.5%;
+    cursor: pointer;
+    
+}
+.btn2:hover{
+    transform: scale(1.05);
+    
+}
+
+/*Group elements to prevent boxmodel colapse when using column system */
+.groupThis:before,
+.groupThis:after{
+    content: "";
+    display: table;
+}
+.groupThis:after{
+    clear: both;
+}
+
+/*Column system*/
+.col-2{
+    float: left;
+    width: 45%;
+    margin: 2% 1.25%;
+}
+.col-3{
+    float: left;
+    width: 30%;
+    margin: 2% 1.5%;
+
+}
+.col-4{
+    float: left;
+    width: 23%;
+    margin: 2% 1%;
+}
+.col-5{
+    float: left;
+    width: 18.5%;
+    margin: 2% 0.7%;
+}
+.col-6{
+    float: left;
+    width: 15.6%;
+    margin-right: 2% 0.5%;
+}
+.col-7{
+    float: left;
+    width: 13.2%;
+    margin: 2% 0.5%;
+}
+.col-8{
+    float: left;
+    width: 11.5%;
+    margin-right: 2% 0.5%;
+}
+.col-9{
+    float: left;
+    width: 10.1%;
+    margin-right: 2% 0.5%;
+}
+.col-10{
+    float: left;
+    width: 9.5%;
+    margin-right: 2% 0.25%;
+}
+.col-11{
+    float: left;
+    width: 8.5%;
+    margin-right: 2% 0.25%;
+}
+.col-12{
+    float: left;
+    width: 7.8%;
+    margin-right: 2% 0.25%;
+}
+
+
+/*Position text*/
+.centerText{
+    text-align: center;
+}
+.alignTextRight{
+    text-align: right;
+}
+.equalTextLineWidth{
+    text-align: justify;
+}
+
+
+/*Float left or right*/
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+
+.favoriteMessage{
+    background: rgb(45, 213, 81);
+    width: 40%;
+    height: 100px;
+    border-radius: 15px;
+    position: fixed;
+    margin: 100px 0 0 30%;
+    z-index: 2;
+    display: none;
+  }
+  
+  .favoriteMessText{
+    position: fixed;
+    color: white;
+    margin: 40px 0 0 7%;
+  }
+.uploadMessage{
+    background: rgb(45, 213, 81);
+    width: 40%;
+    height: 100px;
+    border-radius: 15px;
+    position: fixed;
+    margin: 100px 0 0 30%;
+    z-index: 2;
+    display: none;
+  }
+  
+  .uploadText{
+    position: fixed;
+    color: white;
+    margin: 40px 0 0 12%;
+  }

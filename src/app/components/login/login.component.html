@@ -1,0 +1,42 @@
+<div *ngIf="auth.user | async; then authenticated else guest">
+  <!-- template will replace this div -->
+</div>
+
+<ng-template #guest>
+    <div class="container centerText">
+        <h1>Howdy, GUEST</h1>
+        <h3>Use our email login...</h3>
+        <form (submit)="onSubmit()">
+            <label for="email">Your Email:</label>
+            <input type="text" name="email" id="emailInput"> 
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="passwordInput">
+            <br>
+            <input type="submit" value="Login" class="btn2">
+
+        </form>
+        
+ 
+        <h3>Or use Google Login:</h3>
+        <button class="btn2" (click)="auth.googleLogin()"> Login / Register with Google</button> 
+
+      </div>
+  
+
+</ng-template>
+
+<ng-template #authenticated>
+    <div *ngIf="auth.user | async as user">
+        <div class="container centerText">
+            
+            <h1 class="center-align">Welcome {{user.displayName}}</h1>              
+            <h3 class="center-align">Share images with your co-workers, build your own favorites gallery and have easy access to all images of your colleagues</h3>
+
+            <button class="btn2" routerLink='' (click)="getUid(user.uid)">Main Image Gallery</button>
+            <button class="btn2" routerLink='/favorites'>Your Favorite Images</button> 
+            <button class="btn2" (click)="auth.signOut()">Logout</button> 
+
+          </div>
+    </div>
+</ng-template>

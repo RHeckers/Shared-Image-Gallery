@@ -1,0 +1,38 @@
+h1{
+    color: #3D4252;
+}
+
+.container{
+    border: 5px solid #CACBD5;
+}
+
+.imageBox{
+    position: relative;
+    margin: 1% 0 0 4.9%;
+    height: auto;
+    width: 90%;
+    border: 5px solid #CACBD5;
+    border-radius: 10px;
+    padding-left: 0%; 
+  }
+  
+  img{
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .imgDiv{
+    /* margin: 0; */
+    padding: 0;
+    border: 0.6px solid #CACBD5;
+    overflow: hidden;
+  }
+  .imgDiv:hover{
+    /* margin: 0; */
+    border: 0.6px solid #D55E2D;
+  }
+
+  .btn2{
+      margin-top: 2%;
+  }

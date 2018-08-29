@@ -1,0 +1,23 @@
+<div *ngIf="auth.user | async; then authenticated else guest"></div>
+
+
+<ng-template #guest>
+    <nav class="centerText">
+        <h1>Upload, Browse and Favorite Images</h1>
+        <a routerLink="/login" class="right login">Login</a>  
+        <a routerLink="/" class="left homeLink">Home</a>  
+           
+      </nav> 
+
+</ng-template>
+
+
+<ng-template #authenticated>
+    <nav class="centerText">
+        <h1>Upload, Share or Favorite Images</h1> 
+        <a routerLink="/" class="left homeLink">Home</a>
+        <a class="right logout" (click)="auth.signOut()">Logout / </a>
+        <a routerLink="/favorites" class="right favoriteLink">My Favorites</a>      
+    </nav> 
+
+</ng-template>
